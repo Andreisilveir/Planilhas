@@ -1,1 +1,114 @@
 @charset "UTF-8";
+
+header {
+
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    padding-top: 25px;
+
+}
+
+main {
+
+    background-color: gray;
+    width: 100vw;
+    height: 86.5vh;
+
+}
+
+#textos {
+
+    font-size: 30px;
+    color: white;
+    padding: 20px 0px 10px 15px;
+
+}
+
+
+#info {
+
+    font-size: 20px;
+    color: white;
+    padding: 10px 0px 10px 20px;
+
+}
+
+#botao {
+
+    width: 130px;
+    height: 50px;
+    margin: 10px 0px 0px 20px;
+    font-size: 16px;
+    border: 1px solid blue;
+    border-radius: 7px 7px 7px 7px;
+    background-color: rgb(39, 38, 38);
+    color: white;
+
+}
+
+#botao:hover {
+
+    width: 90px;
+    margin-left: 30px;
+    font-size: 15px;
+    background-color: rgb(54, 53, 53);
+    transition: 0.4s;
+
+}
+
+#atendimento {
+
+    background-color: rgb(89, 88, 88);
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 7px 7px 7px 7px;
+
+}
+
+.n {
+
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+
+}
+
+.iitem {
+
+    width: 300px;
+    height: 25px;
+    padding-left: 5px;
+    margin: 20px 10px 20px 0px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 6px 6px 6px 6px;
+    background-color: rgb(52, 51, 51);
+    color: white;
+
+}
+
+.botaoel {
+
+    width: 90px;
+    height: 35px;
+    margin-left: 20px;
+    border: 1px solid blue;
+    border-radius: 7px 7px 7px 7px;
+    background-color: rgb(37, 36, 36);
+    color: white;
+    cursor: pointer;
+
+}
+
+.botaoel:hover {
+
+    background-color: rgb(83, 81, 81);
+
+}
