@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+
+    
+    <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+
+    <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
+    
+
+</head>
+<body>
+    
+    <header>
+
+        <h1 id="logo">Invenzo</h1>
+
+        <nav></nav>
+
+        <menu></menu>
+
+    </header>
+
+    <main>
+
+        <h1 id="textos">Organização de planilha</h1>
+
+        <p id="info">para adicionar itens a sua planilha clique aqui no botao abaixo</p>
+
+        <button id="botao" onclick="togglePopup()"> Começar</button>
+
+        <form action="cadastro.py" method="get" id="atendimento">
+
+
+
+            <label for="iitem1"  class="n">Item 1: </label>
+
+            <input type="text" name="item1" id="iitem1" class="iitem" required>
+
+            <label for="iitem2" class="n">Item 2: </label>
+
+            <input type="text" name="item2" id="iitem2" class="iitem">
+
+            <label for="iitem3" class="n">Item 3: </label>
+
+            <input type="text" name="item3" id="iitem3" class="iitem">
+
+            <label for="iitem4" class="n">Item 4: </label>
+
+            <input type="text" name="item4" id="iitem4" class="iitem">
+
+            <label for="iitem5" class="n">Item 5: </label>
+
+            <input type="text" name="item5" id="iitem5" class="iitem">
+
+            <label for="iitem6" class="n">Item 6: </label>
+
+            <input type="text" name="item6" id="iitem6" class="iitem">
+
+            <button type="submit" class="botaoel">Enviar</button>
+
+            <button type="reset" class="botaoel">Limpar</button>
+
+            <button onclick="togglePopup()" class="botaoel">Fechar</button>
+
+        </form>
+
+    </main>
+
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById("atendimento");
+            if (popup.style.display === "none" || popup.style.display === "") {
+                popup.style.display = "block"; // Exibe a janela
+            } else {
+                popup.style.display = "none"; // Oculta a janela
+            }
+        }
+    </script>
+
+    <script>
+
+        function togglePopup1() {
+            var popup = document.getElementById("duvidas");
+            if (popup.style.display === "none" || popup.style.display === "") {
+                popup.style.display = "block"; // Exibe a janela
+            } else {
+                popup.style.display = "none"; // Oculta a janela
+            }
+        }
+    </script>
+
+</body>
+</html>
