@@ -30,7 +30,29 @@
 
         <p id="info">para adicionar itens a sua planilha clique aqui no botao abaixo</p>
 
-        <button id="botao" onclick="togglePopup()"> Começar</button>
+        <button class="botao" onclick="togglePopup1()">
+            Registrar
+        </button>
+
+        <button class="botao" onclick="togglePopup()"> Começar</button>
+
+        <form action="cadastro.py" method="get" id="registro">
+
+            <label for="inome" class="n">Nome: </label>
+
+            <input type="text" name="nome" id="inome" class="iitem" required minlength="3" placeholder="Nome completo">
+
+            <label for="icon" class="n">Tema: </label>
+
+            <input type="text" name="con" id="icon" class="iitem" required placeholder="Tema da planilha">
+
+            <button type="submit" class="botaoel">Enviar</button>
+
+            <button type="reset" class="botaoel">Limpar</button>
+
+            <button onclick="togglePopup1()" class="botaoel">Fechar</button>
+
+        </form>
 
         <form action="cadastro.py" method="get" id="atendimento">
 
@@ -71,6 +93,7 @@
     </main>
 
     <script>
+
         function togglePopup() {
             var popup = document.getElementById("atendimento");
             if (popup.style.display === "none" || popup.style.display === "") {
@@ -79,12 +102,13 @@
                 popup.style.display = "none"; // Oculta a janela
             }
         }
+
     </script>
 
     <script>
 
         function togglePopup1() {
-            var popup = document.getElementById("duvidas");
+            var popup = document.getElementById("registro");
             if (popup.style.display === "none" || popup.style.display === "") {
                 popup.style.display = "block"; // Exibe a janela
             } else {
